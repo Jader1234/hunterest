@@ -6,8 +6,8 @@ const app = express();
 app.use(express.static(__dirname + '/hunterest/'));
 
 // Send all requests to index.html
-app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/hunterest/src/app/app.component.html'));
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/src/app/app.component.html'));
 });
 
 // default Heroku PORT
