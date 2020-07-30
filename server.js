@@ -1,4 +1,14 @@
-var express = require('express');
-var app = express();
-app.use(express.static(__dirname + 'src/app/app.component.html')); //aqui você define onde está o index.html da sua aplicação.
-app.listen(process.env.PORT || 4200);
+const express = require('express');
+const path = require('path');
+const app = express();
+
+// Serve static files....
+app.use(express.static(__dirname + '/hunterest/'));
+
+// Send all requests to index.html
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/hunterest/src/app/app.component.html'));
+});
+
+// default Heroku PORT
+app.listen(process.env.PORT || 3000);
