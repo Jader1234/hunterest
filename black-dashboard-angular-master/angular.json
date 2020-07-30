@@ -30,10 +30,13 @@
               "src/styles.scss",
               "node_modules/ngx-toastr/toastr.css",
               "src/assets/scss/black-dashboard.scss",
-              "src/assets/css/nucleo-icons.css"
+              "src/assets/css/nucleo-icons.css",
+              "styles.css",
+              "../node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [],
-            "es5BrowserSupport": true
+            "es5BrowserSupport": true,
+            "../node_modules/bootstrap/dist/js/bootstrap.js"
           },
           "configurations": {
             "production": {

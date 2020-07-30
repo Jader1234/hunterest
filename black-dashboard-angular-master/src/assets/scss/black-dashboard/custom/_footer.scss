@@ -6,11 +6,12 @@
     }
 
     .nav{
-        display: inline-block;
+        position: inline-block;
         float: left;
         margin-bottom: 0;
         padding-left: 30px;
         list-style: none;
+        background-color: red;
     }
 
     .nav-item{

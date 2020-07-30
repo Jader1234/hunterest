@@ -1,0 +1,30 @@
+<div class="menu-component">
+    <div class="menu-title">
+        <a href="javascript:void(0)"> {{ getTitle() }} </a>
+    </div>
+    <div class="main-menu">
+    <div class="logo">
+        <a class="simple-text logo-mini">
+        <div class="logo-img">
+            <img src="https://www.achei14.com.br/admin/fotos/estabelecimentos/est_843_58cd523c722f5.jpg" />
+        </div>
+        </a>
+        <a class="simple-text logo-normal">
+            Hunterest
+        </a>
+    </div>
+        <ul class="nav">
+        <li
+            routerLinkActive="active"
+            *ngFor="let menuItem of menuItems"
+            class="{{ menuItem.class }} nav-item"
+        >
+            <a [routerLink]="[menuItem.path]">
+            <p>{{ menuItem.title }}</p>
+            </a>
+        </li>
+        </ul>
+    <div class="menu-footer">
+    </div>
+    </div>
+</div>
