@@ -1,5 +1,5 @@
 var express = require('express');
-var home = require('./src/app/app-routing.module.ts');
+var home = require('./src/index.html');
 module.exports = function(){
 	var app = express();
 	//Mudança no parâmetro PORT para publicar no Heroku
