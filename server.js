@@ -1,12 +1,5 @@
-const express = require('express');
-const path = require('path');
-const app = express();
-__dirname = path.resolve(path.dirname(''));
-
-app.use(express.static(__dirname +'/dist/hunterest'));
-
-app.get('/', function(req,res) {
-    res.sendFile(path.join('/src/app/app.component.html'));
+var http = require('http');
+var app = require('./src/config/express')();
+http.createServer(app).listen(app.get('port'), function(){
+	console.log('Express Server escutando na porta ' + app.get('port'));
 });
-
-app.listen(process.env.PORT || 8080);
