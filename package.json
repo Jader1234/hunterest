@@ -26,6 +26,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "bootstrap": "^4.5.0",
+    "esm": "^3.2.25",
     "express": "^4.8.8",
     "express-load": "^1.1.16",
     "method-override": "^2.1.3",
